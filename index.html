@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Volleyball Hit Animation</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #EECC96;
+      }
+  
+      .container {
+        display: flex;
+        align-items: flex-start;
+        height: 95vh;
+        box-sizing: border-box;
+        flex-direction: row; 
+        justify-content: flex-start;
+        margin-top: 20px;
+        background-color: white;
+      }
+  
+      .left-column {
+        width: 50vw;
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-top: 60px;
+        margin-left: 60px;
+      }
+  
+      .left-column h1, .left-column h2 {
+        margin: 0 0 10px;
+      }
+  
+      .legend-item {
+        display: flex;
+        align-items: left;
+        margin: 10px 0;
+      }
+      
+      .legend-circle {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 0px solid white;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      .legend-label {
+        font-size: 14px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+  
+      .right-column {
+        position: relative;
+        overflow: visible;
+        margin-right: 40px;
+        padding-right: 60px;
+      }
+
+      .right-column svg {
+        width: 99%;
+        height: auto;
+        max-width: 1000px;
+        display: block;
+      }
+  
+      svg {
+        width: 99%;
+        height: auto;
+        max-width: 1000px;
+      }
+
+      h1 {
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        margin-top: 60px;
+      }
+
+      h2 {
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        margin-left: 0px;
+        padding-bottom: 20px;
+        max-width: 88%;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+      <div class="left-column">
+        
+          <h1 style="margin-left: 0px;">OUTSIDE HITS</h1>
+          <h2 style="margin-left: 0px">Hitting stats based on Macalester College volleyball outside hitters in a match against Hamline University on October 22, 2022.</h2>
+            <div class="legend" style="margin-left: 00px;">
+              <div class="legend-item">
+                <span class="legend-circle" style="background-color: #313B72;"></span>
+                <span class="legend-label" style="color: #313B72">KILL</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-circle" style="background-color: #A31621;"></span>
+                <span class="legend-label" style="color:#A31621">ERROR</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-circle" style="background-color: #7CA982;"></span>
+                <span class="legend-label" style="color: #7CA982">DIG/BLOCK</span>
+              </div>
+          </div>
+
+      </div>
+        
+      
+      <div class="right-column">
+        <div style="width: 100%; margin-right:0px">
+          <svg viewBox="0 80 480 840" preserveAspectRatio="xMinYMin meet"></svg>
+      </div>
+      </div>
+    </div>
+  
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
